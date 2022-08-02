@@ -26,24 +26,22 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                kGradiant1stColor,
-                kGradiant2ndColor
-              ]
-            )
-          ),
-          child: Center(
-            child: SpinKitRipple(
-              color: kWhite,
-              size: 150,
-              duration: Duration(seconds: 3),
-            ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              kGradiant1stColor,
+              kGradiant2ndColor
+            ]
+          )
+        ),
+        child: Center(
+          child: SpinKitRipple(
+            color: kWhite,
+            size: 150,
+            duration: Duration(seconds: 3),
           ),
         ),
       ),
